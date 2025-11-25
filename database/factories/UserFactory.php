@@ -23,6 +23,7 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $password = 'password'; // テスト用
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
