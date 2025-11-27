@@ -21,7 +21,7 @@ class AuthAndTodoTest extends TestCase
             'password_confirmation' => 'password',
         ];
 
-        $this->postJson('/api/refister', $payload)
+        $this->postJson('/api/register', $payload)
             ->assertStatus(201)
             ->assertJsonStructure(['user' => ['id', 'name', 'email'], 'token']);
 
