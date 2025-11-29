@@ -11,6 +11,7 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
+    /** @use HasApiTokens(I can get API Token when I use laravel sanctum($use->createToken)) */
     use HasFactory, Notifiable, HasApiTokens;
 
     /**

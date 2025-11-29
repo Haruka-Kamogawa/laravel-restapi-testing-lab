@@ -22,8 +22,9 @@ class UpdateTodoRequest extends FormRequest
      */
     public function rules(): array
     {
+        // validation rules
         return [
-            'title' => 'sometimes|string|max:255',
+            'title' => 'sometimes|string|max:255', //sometimes will validat when there is only title  
             'is_done' => 'sometimes|boolean',
         ];
     }
