@@ -22,6 +22,7 @@ class StoreTodoRequest extends FormRequest
      */
     public function rules(): array
     {
+        // validation rules
         return [
             'title' => 'required|string|max:255',
         ];

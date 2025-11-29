@@ -19,7 +19,7 @@ class TodoFactory extends Factory
     {
         return [
             'user_id' => User::factory(), // user自動作成
-            'title' => $this->faker->sentence(),
+            'title' => $this->faker->sentence(), // faker will create random data
             'is_done' => $this->faker->boolean(20),
         ];
     }
